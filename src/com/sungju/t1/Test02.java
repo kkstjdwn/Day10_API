@@ -5,7 +5,7 @@ public class Test02 {
 	public static void main(String[] args) {
 		/**
 		 * 주민등록번호입력 000000-0000000
-		 * 		9	2	0	8	1	9	1	0	6	9	2	1	5
+		 * 		0
 		 * 	
 		 * 1.	x2	x3	x4	x5	x6	x7	x8	x9	x2	x3	x4	x5	검증
 		 * 2.	18	6	0	40	6	63	8	0	12	27	8	5 -- > 다 더함
