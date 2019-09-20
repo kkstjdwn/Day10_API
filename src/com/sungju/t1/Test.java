@@ -14,7 +14,7 @@ public class Test {
 		System.out.println("'-'를 포함한 주민번호입력");
 		Scanner sc = new Scanner(System.in);
 
-		String jn = "000219-3000000";
+		String jn = "090919-4000000";
 		//int mon = Integer.valueOf(jn.substring(2, 4));
 		
 		int mon = Integer.parseInt(jn.substring(2, 4));

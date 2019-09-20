@@ -1,5 +1,7 @@
 package com.sungju.t1;
 
+import java.util.Scanner;
+
 public class Test02 {
 
 	public static void main(String[] args) {
@@ -13,10 +15,12 @@ public class Test02 {
 		 * 4.	11 - 나머지 == 결과값z // 4_1 결과값이 두자리라면 /10 -- 나머지 r
 		 * 5.	z,r 와 마지막번호가 같아야함
 		 */
+		Scanner sc = new Scanner(System.in);
 		int sum=0;
-		String jn = "000000-0000000";
+		System.out.println("'를' 포함한 주민등록번호를 입력하세요");
+		String jn = sc.next();
 		jn= jn.replaceAll("-", "");
-		int korean = Integer.parseInt(jn.substring(12, 13));
+		int korean = Integer.parseInt(jn.substring(12));
 		int[] check = new int[jn.length()-1];
 		
 		for (int i = 0; i < jn.length()-1; i++) {
@@ -37,9 +41,10 @@ public class Test02 {
 		}
 		
 		System.out.println("합끝 "+ sum);
-		System.out.println(korean);
 		
-		if (11-sum%11 == korean) {
+		sum = 11-sum%11;
+		
+		if (sum == korean || sum%10 == korean) {
 			System.out.println("정상");
 		}else {
 			System.out.println("비정상");
