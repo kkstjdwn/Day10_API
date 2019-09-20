@@ -21,6 +21,7 @@ public class Test {
 		int gen = Integer.parseInt(jn.substring(7, 8));
 		int age = Integer.parseInt(jn.substring(0, 2));
 		
+		
 
 		if (mon >= 3 && mon <= 5) {
 			System.out.print("봄에 태어난 ");
